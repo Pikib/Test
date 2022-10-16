@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+</head>
+<center>
+    {% if products_list %}
+    <ui>
+        {% for product in products_list %}
+        <li>
+            {{ Products.name }} {{ Products.description }} {{ Products.price }} {{ Products.weight }} {{ Products.material }} {{ Products.manufacturer }}
+        </li>
+        {% endfor %}
+    </ui>
+    {% else %}
+        <p>There are no products</p>
+    {% endif %}
+</center>
+<body>
+
+</body>
+</html>
