@@ -10,7 +10,7 @@ class Products(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=50, verbose_name='Наименование')
     description = models.CharField(max_length=200, verbose_name='Описание')
-    price = models.IntegerField(verbose_name='Цена')
+    price = models.IntegerField(verbose_name='Стоимость')
     weight = models.IntegerField(verbose_name='Вес')
     material = models.CharField(max_length=50, verbose_name='Материал')
     manufacturer = models.ForeignKey('Manufacturers',
